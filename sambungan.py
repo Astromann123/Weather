@@ -40,9 +40,6 @@ if st.button('Prediksi'):
         if cuaca_prediksi[0] == 4:
             cuaca_prediksi = 'Sun'
             st.success(cuaca_prediksi)
-        else:
-            cuaca_prediksi = '<span style="color:red">datanya tidak masuk akal</span>'
-            st.markdown(cuaca_prediksi, unsafe_allow_html=True)
     except ValueError:
         st.error("Pastikan semua input diisi dengan angka yang valid.")
     except Exception as e:
