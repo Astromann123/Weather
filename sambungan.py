@@ -20,8 +20,8 @@ Prediksi_Cuaca = ''
 if st.button('Prediksi'):
     try:
         # Konversi input menjadi numerik
-        inputs = np.array([[float(Segala bentuk air yang jatuh ke permukaan tanah), float(Suhu Maksimum), float(Suhu Minimum), 
-                            float(Kecepatan Angin)]])
+        inputs = np.array([[float(Precipitation), float(temp_max), float(temp_min), 
+                            float(wind)]])
         # Lakukan prediksi
         cuaca_prediksi = weather_model.predict(inputs)
         
